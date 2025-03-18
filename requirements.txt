@@ -1,0 +1,6 @@
+Flask~=3.1.0
+scrapy
+sentence-transformers
+faiss-cpu
+beautifulsoup4
+selenium
