@@ -1,4 +1,0 @@
-[
-{"nom_formation": "Licence Informatique", "etablissement": "Université Paris", "ville": "Paris", "attendus": ["Mathématiques", "Logique", "Autonomie"], "specialites": ["NSI", "Maths", "Physique"], "taux_admission": "40%", "debouches": ["Développeur", "Ingénieur logiciel"]},
-{"nom_formation": "BUT Informatique", "etablissement": "IUT Nice", "ville": "Nice", "attendus": ["Esprit d’analyse", "Autonomie"], "specialites": ["NSI", "Maths"], "taux_admission": "35%", "debouches": ["Technicien systèmes", "Développeur Fullstack"]}
-]

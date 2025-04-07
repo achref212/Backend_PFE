@@ -4,24 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="644b5880-6a00-40a2-91e4-73dfca54c7cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Backend_PFE.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/scraping_route.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/formations.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/indexing/encode_and_index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/indexing/query_vector_search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_scraping_all.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/formations_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/onisep_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/scripts/parcoursup_selenium_scraper.py" afterDir="false" />
+    <list default="true" id="644b5880-6a00-40a2-91e4-73dfca54c7cd" name="Changes" comment="agent of scraping">
+      <change afterPath="$PROJECT_DIR$/app/routes/Services/agent_onisep.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup_links.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/Services/all_links.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/Services/selenium_onisep.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/Services/selenium_parcoursup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/Services/selenium_parcoursup_links.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/OnisepSpider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/OnisepSpider1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/OnisepSpiderFinal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/formation_single_spider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/parcoursup_links_spider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/parcoursup_spider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/scripts/onisep_scraper_detail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraping/scripts/parcoursup_scraper_full.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/scraping_route.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/formations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexing/encode_and_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/indexing/encode_and_index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_scraping_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_scraping_all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/formations_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/formations_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/onisep_spider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraping/scripts/parcoursup_selenium_scraper.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +46,23 @@
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2uU5bGFptYKEjJFGwFeHgUo3QVc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,9 +73,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Flask server.Backend_PFE.executor": "Debug",
+    "Python.selenium_scraper.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/chaabaniachref/Desktop/Achref/Backend_PFE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,7 +87,35 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.selenium_parcoursup">
+    <configuration name="selenium_parcoursup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Backend_PFE" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/routes/Services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/routes/Services/selenium_parcoursup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Backend_PFE" type="Python.FlaskServer">
       <module name="Backend_PFE" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -80,6 +132,11 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.selenium_parcoursup" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -97,11 +154,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742290382423</updated>
-      <workItem from="1742290382977" duration="10422000" />
+      <workItem from="1742290382977" duration="12655000" />
+      <workItem from="1742375817887" duration="598000" />
+      <workItem from="1742380216129" duration="10055000" />
+      <workItem from="1742817371429" duration="33242000" />
+      <workItem from="1743582136076" duration="29002000" />
+      <workItem from="1743696356250" duration="3463000" />
+      <workItem from="1743754675447" duration="21724000" />
+      <workItem from="1743946056961" duration="15643000" />
+      <workItem from="1744015029706" duration="13797000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="agent of scraping" />
+    <option name="LAST_COMMIT_MESSAGE" value="agent of scraping" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Backend_PFE$Backend_PFE.coverage" NAME="Backend_PFE Coverage Results" MODIFIED="1743776213319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Backend_PFE$selenium_scraper.coverage" NAME="selenium_scraper Coverage Results" MODIFIED="1743946490159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/routes/Services" />
   </component>
 </project>

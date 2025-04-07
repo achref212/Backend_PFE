@@ -8,7 +8,7 @@ import os
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Chemins
-json_path = "data/formations.json"
+json_path = "data/formations_links.json"
 index_path = "data/formations_index.faiss"
 meta_path = "data/formations_metadata.json"
 
@@ -27,7 +27,7 @@ except FileNotFoundError:
     raise FileNotFoundError(f"[❌] Le fichier {json_path} est introuvable.")
 
 if not data:
-    raise ValueError("[❌] Le fichier formations.json est vide ou invalide.")
+    raise ValueError("[❌] Le fichier formations_links.json est vide ou invalide.")
 
 # Création des documents à encoder
 documents = [
