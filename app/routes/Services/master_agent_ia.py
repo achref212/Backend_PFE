@@ -22,7 +22,7 @@ def main():
     run_script("Agent IA Onisep", "agent_onisep_ia.py")
 
     # Étape 4 : Nettoyage IA des données finales
-    run_script("Agent IA de Nettoyage (Data Cleaning)", "cleaning_agent.py")
+    run_script("Agent IA de Nettoyage (Data Cleaning)", "multi_agent_cleaning.py")
 
     end = time.time()
     print(f"\n🎉 Master Agent terminé en {round(end - start, 2)} secondes")

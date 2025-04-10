@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="644b5880-6a00-40a2-91e4-73dfca54c7cd" name="Changes" comment="agent of scraping">
-      <change afterPath="$PROJECT_DIR$/app/routes/Services/cleaning_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/Services/multi_agent_cleaning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/agent_onisep.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/agent_onisep_ia.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/agent_onisep_ia.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup_ia.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup_ia.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/all_links.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/formations.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/formations_scraped.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/final_cleaned.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/final_cleaned.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/formations_parcoursup.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/formations_parcoursup.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/Services/master_agent_ia.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/master_agent_ia.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/Services/parcoursup_updated.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/parcoursup_updated.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/selenium_onisep.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/selenium_parcoursup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/selenium_parcoursup_links.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +146,7 @@
       <workItem from="1744037631847" duration="2242000" />
       <workItem from="1744040581495" duration="4403000" />
       <workItem from="1744102018428" duration="19294000" />
-      <workItem from="1744273054943" duration="1761000" />
+      <workItem from="1744273054943" duration="6934000" />
     </task>
     <servers />
   </component>
