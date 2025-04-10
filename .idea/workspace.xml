@@ -5,33 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="644b5880-6a00-40a2-91e4-73dfca54c7cd" name="Changes" comment="agent of scraping">
-      <change afterPath="$PROJECT_DIR$/app/routes/Services/agent_onisep.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup_links.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/Services/all_links.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/Services/selenium_onisep.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/Services/selenium_parcoursup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/Services/selenium_parcoursup_links.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/OnisepSpider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/OnisepSpider1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/OnisepSpiderFinal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/formation_single_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/parcoursup_links_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/parcoursup_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/scripts/onisep_scraper_detail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraping/scripts/parcoursup_scraper_full.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/Services/cleaning_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/scraping_route.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/formations.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexing/encode_and_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/indexing/encode_and_index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_scraping_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_scraping_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/formations_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/formations_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders/onisep_spider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraping/scripts/parcoursup_selenium_scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/agent_onisep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/agent_onisep_ia.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/agent_onisep_ia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup_ia.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup_ia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/all_links.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/formations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/formations_scraped.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/master_agent_ia.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/master_agent_ia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/parcoursup_updated.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/parcoursup_updated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/selenium_onisep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/selenium_parcoursup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/selenium_parcoursup_links.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,22 +58,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flask server.Backend_PFE.executor": "Debug",
-    "Python.selenium_scraper.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/chaabaniachref/Desktop/Achref/Backend_PFE",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flask server.Backend_PFE.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.selenium_scraper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chaabaniachref/Desktop/Achref/Backend_PFE&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/scraping/parcoursup_scraper/spiders" />
@@ -162,7 +150,11 @@
       <workItem from="1743696356250" duration="3463000" />
       <workItem from="1743754675447" duration="21724000" />
       <workItem from="1743946056961" duration="15643000" />
-      <workItem from="1744015029706" duration="13797000" />
+      <workItem from="1744015029706" duration="15771000" />
+      <workItem from="1744037631847" duration="2242000" />
+      <workItem from="1744040581495" duration="4403000" />
+      <workItem from="1744102018428" duration="19294000" />
+      <workItem from="1744273054943" duration="1761000" />
     </task>
     <servers />
   </component>
