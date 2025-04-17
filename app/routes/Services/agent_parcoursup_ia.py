@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 import re, json, time
 from bs4 import BeautifulSoup
@@ -138,35 +139,66 @@ def extract_info_as_agent(driver, url):
         "lien_onisep": lien_onisep_url
     }
 
-def run_agent_on_all_links(input_file="parcoursup_links.json", output_file="formations_parcoursup.json"):
-    print("🤖 Démarrage de l'agent IA Parcoursup...")
+def run_agent_on_all_links(
+    input_file="missing_links.json",
+    output_file="formations_parcoursup.json"
+):
+    print("🤖 Démarrage de l'agent IA Parcoursup avec sauvegarde progressive...")
+
+    # Charger tous les liens
     with open(input_file, "r", encoding="utf-8") as f:
-        links = json.load(f)
+        all_links = json.load(f)
+
+    # Charger les formations déjà traitées
+    existing_data = []
+    processed_links = set()
+    if os.path.exists(output_file):
+        with open(output_file, "r", encoding="utf-8") as f:
+            try:
+                existing_data = json.load(f)
+                processed_links = set(item["url"] for item in existing_data if "url" in item)
+            except:
+                existing_data = []
+
+    # Filtrer les liens déjà traités
+    to_process = [link for link in all_links if link not in processed_links]
+    print(f"🔗 {len(to_process)} formations à traiter.")
 
     options = Options()
     options.add_argument("--headless=new")
     driver = webdriver.Chrome(options=options)
 
-    results = []
-    for i, link in enumerate(links):
-        print(f"\n🔍 ({i+1}/{len(links)}) Scraping : {link}")
+    new_results = []
+    save_every = 1000
+
+    for i, link in enumerate(to_process):
+        print(f"\n🔍 ({i+1}/{len(to_process)}) Scraping : {link}")
         try:
             data = extract_info_as_agent(driver, link)
             if data:
-                results.append(data)
+                new_results.append(data)
                 print("✅ Formation ajoutée.")
             else:
-                print("⚠️ Ignorée : Erreur ou données manquantes.")
+                print("⚠️ Ignorée (aucune donnée)")
         except Exception as e:
-            print(f"❌ Erreur sur le lien : {e}")
+            print(f"❌ Erreur sur {link} : {e}")
+
         time.sleep(1)
+
+        # 💾 Sauvegarde toutes les 1000 formations
+        if len(new_results) % save_every == 0:
+            partial = existing_data + new_results
+            with open(output_file, "w", encoding="utf-8") as f:
+                json.dump(partial, f, ensure_ascii=False, indent=2)
+            print(f"💾 Sauvegarde intermédiaire : {len(partial)} formations enregistrées.")
 
     driver.quit()
 
+    # 📦 Sauvegarde finale
+    final = existing_data + new_results
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-
-    print(f"\n📁 Enregistrement terminé : {len(results)} formations sauvegardées dans {output_file}")
+        json.dump(final, f, ensure_ascii=False, indent=2)
+    print(f"\n✅ Fin de scraping. {len(final)} formations enregistrées dans : {output_file}")
 
 # Exécution automatique
 if __name__ == "__main__":
