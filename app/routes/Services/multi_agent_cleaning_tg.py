@@ -7,7 +7,7 @@ from together import Together
 
 # === Init
 load_dotenv()
-client = Together(api_key=os.getenv("tgp_v1_sx1EIe9nElmw5q7bhJVWAtLokbGEzAu8q0T4W8471YQ"))
+client = Together(api_key=os.getenv("tgp_v1_jPoZ7Q5VDYvGMCNpZeSMNN3crX1pLz-um1AgPlgSCMw"))
 
 def save_failed(formation, path="failed_cleaning.json"):
     try:
@@ -55,7 +55,7 @@ Nettoie et reformule les données comme suit :
                 model=current_model,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.4,
-                timeout=120
+                timeout=200
             )
             output = response.choices[0].message.content.strip()
 
@@ -123,7 +123,7 @@ Ne retourne que le champ "debouches" sous forme de JSON. Ne mets rien autour.
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.4,
-                timeout=120
+                timeout=200
             )
             content = response.choices[0].message.content.strip()
 
@@ -179,7 +179,7 @@ Complète les champs vides :
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.5,
-                timeout=120
+                timeout=200
             )
 
             content = response.choices[0].message.content.strip()

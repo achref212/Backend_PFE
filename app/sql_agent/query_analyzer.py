@@ -1,0 +1,2 @@
+def detect_sql_intent(prompt: str) -> bool:
+    return any(keyword in prompt.lower() for keyword in ["combien", "quels", "où", "nombre", "liste", "taux", "prix", "salaire", "ville", "matière", "secteur", "formation"])

@@ -1,20 +1,17 @@
-from flask import Flask, request, jsonify
-from indexing.query_vector_search import search
+from flask import Flask
+from app.service.database import db
+from app.service.insert_data import insert_formations_from_json
 
 app = Flask(__name__)
 
+# Configuration PostgreSQL
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://achref:mypasswordac@localhost:5432/pfe_db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-@app.route('/query_rag', methods=['POST'])
-def query_rag():
-    content = request.json
-    question = content.get("question")
-    if not question:
-        return jsonify({"error": "question manquante"}), 400
+db.init_app(app)
+with app.app_context():
 
-    results = search(question)
-    return jsonify(results)
+    insert_formations_from_json(app)
 
-
-
-if __name__ == '__main__':
-    app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
