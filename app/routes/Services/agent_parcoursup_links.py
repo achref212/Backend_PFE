@@ -4,18 +4,25 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-import time, json
+import time
+import json
+
+# === Config Chrome ===
+CHROMEDRIVER_PATH = "/usr/local/bin/chromedriver"
 
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
-driver = webdriver.Chrome(service=Service(), options=options)
+
+
+driver = webdriver.Chrome(service=Service(CHROMEDRIVER_PATH), options=options)
 wait = WebDriverWait(driver, 20)
 
+# === URL de base et état initial ===
 base_url = "https://dossier.parcoursup.fr/Candidat/carte"
 formation_links = []
-
 current_page = 1
 
+# === Fonction d’extraction ===
 def extract_links():
     try:
         wait.until(EC.presence_of_element_located((By.ID, "courses-cards")))
@@ -35,11 +42,12 @@ def extract_links():
         with open(f"debug_page_{current_page}.html", "w", encoding="utf-8") as f:
             f.write(driver.page_source)
 
+# === Lancement ===
 try:
     driver.get(base_url)
     time.sleep(2)
 
-    # ✅ Accept cookies
+    # ✅ Acceptation des cookies
     try:
         cookie_button = wait.until(EC.element_to_be_clickable((By.ID, "tarteaucitronPersonalize2")))
         driver.execute_script("arguments[0].scrollIntoView(true);", cookie_button)
@@ -47,7 +55,7 @@ try:
         cookie_button.click()
         print("✅ Cookies acceptés.")
     except Exception as e:
-        print(f"⚠️ Cookies pas acceptés : {e}")
+        print(f"⚠️ Cookies pas acceptés automatiquement : {e}")
 
     print(f"\n📄 Analyse de la page {current_page} (première page)...")
     extract_links()
@@ -76,9 +84,9 @@ try:
 finally:
     driver.quit()
 
-# 💾 Save
+# 💾 Sauvegarde finale
 with open("parcoursup_links.json", "w", encoding="utf-8") as f:
     json.dump(formation_links, f, indent=2, ensure_ascii=False)
 
 print(f"\n✅ Total de {len(formation_links)} liens collectés.")
-print("📁 Fichier sauvegardé : parcoursup_formation_links.json")
+print("📁 Fichier sauvegardé : parcoursup_links.json")

@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=22937&typeBac=0&originePc=0",
+    "titre": "Université Paris 1 Panthéon Sorbonne / Université Sorbonne Nouvelle Paris 3 (Paris 5e Arrondissement - 75)",
+    "formation_selective": true,
+    "ts_taux_par_bac": {
+      "TS Tle système français G": {
+        "appelables": 59,
+        "taux": "Lycéens bac général"
+      }
+    },
+    "nb_candidats_postulent": 84,
+    "nb_candidats_appelables": 49,
+    "ts_autres_eleves": {
+      "postulants_autres": 25,
+      "appelables_autres": 49,
+      "taux_estime": 196.0
+    }
+  },
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23589&typeBac=0&originePc=0",
+    "titre": "Université Paris 1 Panthéon Sorbonne (Paris 5e Arrondissement - 75)",
+    "formation_selective": true,
+    "ts_taux_par_bac": {
+      "TS Tle système français G": {
+        "appelables": 4863,
+        "taux": "Lycéens bac général"
+      }
+    },
+    "nb_candidats_postulent": 0,
+    "nb_candidats_appelables": 0,
+    "ts_autres_eleves": {
+      "postulants_autres": -4863,
+      "appelables_autres": 0,
+      "taux_estime": null
+    }
+  }
+]

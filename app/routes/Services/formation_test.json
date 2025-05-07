@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=22937&typeBac=0&originePc=0",
+    "titre": "Université Paris 1 Panthéon Sorbonne / Université Sorbonne Nouvelle Paris 3 (Paris 5e Arrondissement - 75)Double licence - Histoire / Langues, littératures et civilisations étrangères et régionales - Histoire-Allemand/Etudes germaniques",
+    "formation_selective": true,
+    "ts_taux_par_bac": {
+      "TS_Tle_G": 0.0,
+      "TS_Tle_T": 0.0,
+      "TS_Tle_P": 0.0,
+      "TS_Autres": 0.0
+    }
+  },
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23589&typeBac=0&originePc=0",
+    "titre": "Université Paris 1 Panthéon Sorbonne (Paris 5e Arrondissement - 75)Double licence - Droit / Science politique - Droit - Science Politique",
+    "formation_selective": true,
+    "ts_taux_par_bac": {
+      "TS_Tle_G": 0.0,
+      "TS_Tle_T": 0.0,
+      "TS_Tle_P": 0.0,
+      "TS_Autres": 0.0
+    }
+  }
+]

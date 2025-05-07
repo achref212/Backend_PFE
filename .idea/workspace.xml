@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="644b5880-6a00-40a2-91e4-73dfca54c7cd" name="Changes" comment="agent of scraping">
-      <change afterPath="$PROJECT_DIR$/app/service/insert_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sql_agent/agent_runner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sql_agent/query_analyzer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sql_agent/result_summarizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sql_agent/schema_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sql_agent/sql_executor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sql_agent/sql_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sql_agent/table_selector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/training/build_training_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/training/log_for_finetune.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Final Data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_fastapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Backend_PFE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Backend_PFE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/cleaning_agent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/final_cleaned.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/formations_parcoursup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/multi_agent_cleaning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/multi_agent_cleaning_tg.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/multi_agent_cleaning_tg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/parcoursup_final_data_cleaned.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Services/parcoursup_updated.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup_links.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Services/agent_parcoursup_links.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +35,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file:///Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/chrome/webdriver.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -211,7 +191,9 @@
       <workItem from="1744102018428" duration="19294000" />
       <workItem from="1744273054943" duration="252003000" />
       <workItem from="1745920064492" duration="16357000" />
-      <workItem from="1745965305915" duration="15501000" />
+      <workItem from="1745965305915" duration="16139000" />
+      <workItem from="1746174274183" duration="11807000" />
+      <workItem from="1746434381981" duration="6675000" />
     </task>
     <servers />
   </component>
