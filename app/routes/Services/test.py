@@ -193,7 +193,105 @@ def extract_all_intervalles(driver):
         print(f"[❌] Erreur globale : {e}")
 
     return intervalles_final
+def extract_taux_passage_2e_annee(driver):
+    try:
+        # 🔁 Aller à l’onglet "Réussite"
+        tab_reussite = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, "tabpanel-5"))
+        )
+        driver.execute_script("arguments[0].click();", tab_reussite)
+        time.sleep(1.5)
 
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+
+        # ✅ Sélectionner uniquement le bloc contenant le bon titre
+        blocs = soup.select("div.border-grise.fr-p-3w")
+        target_bloc = None
+        for bloc in blocs:
+            titre = bloc.find("h4")
+            if titre and "La réussite des étudiants" in titre.text:
+                target_bloc = bloc
+                break
+
+        if not target_bloc:
+            print("⚠️ Bloc 'La réussite des étudiants' non trouvé.")
+            return ""
+
+        # ✅ Rechercher le taux de passage dans les <li>
+        for li in target_bloc.select("ul li"):
+            p_list = li.find_all("p")
+            if len(p_list) >= 2 and "Taux de passage en 2ème année" in p_list[0].text:
+                match = re.search(r"(\d+[,.]?\d*)", p_list[1].text)
+                if match:
+                    return match.group(1).replace(",", ".")
+
+        print("⚠️ Taux de passage en 2e année introuvable dans le bloc.")
+        return ""
+
+    except Exception as e:
+        print(f"[⚠️] Erreur taux passage 2e année : {e}")
+        return ""
+def extract_criteres_candidature(driver):
+    try:
+        # Aller à l’onglet 2
+        tab2 = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, "tabpanel-2"))
+        )
+        driver.execute_script("arguments[0].click();", tab2)
+        time.sleep(1.5)
+
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        criteres = []
+
+        # 🧠 Étape 1 : Lister les noms courts (ordre) depuis #div-analyse-cddt-onglet2
+        noms_courts = []
+        grille_section = soup.select_one("div#div-analyse-cddt-onglet2 ul")
+        if grille_section:
+            for li in grille_section.find_all("li", class_="badge-data"):
+                label = li.select_one(".badge-data-label div")
+                if label:
+                    noms_courts.append(clean_text(label.text))
+
+        # 🔍 Étape 2 : Parcourir les blocs avec h6
+        parent = soup.select_one("div.fr-col-12.fr-pt-3w")
+        blocs = parent.select("div.fr-mb-5w") if parent else []
+
+        for index, bloc in enumerate(blocs):
+            h6 = bloc.select_one("h6")
+            if not h6:
+                continue
+
+            h6_text = clean_text(h6.text)
+            match = re.search(r"compt(?:e|ent)? pour (\d+[,.]?\d*)%", h6_text, re.IGNORECASE)
+            if not match:
+                print(f"[⚠️] Titre non conforme : {h6_text}")
+                continue
+
+            poids = float(match.group(1).replace(",", "."))
+            nom_critere = noms_courts[index] if index < len(noms_courts) else f"Critère {index+1}"
+
+            # 📥 Sous-critères
+            for li in bloc.select("ul.fr-toggle__list > li"):
+                titre_el = li.select_one(".psup-criteria-detail-title")
+                rating_el = li.select_one(".psup-rating-text")
+                if not titre_el or not rating_el:
+                    continue
+
+                titre = clean_text(titre_el.text)
+                niveau = clean_text(rating_el.text).lower()
+
+                criteres.append({
+                    "nom_critere": nom_critere,
+                    "poids": poids,
+                    "niveau": niveau,
+                    "titre": titre
+                })
+
+        return criteres
+
+    except Exception as e:
+        print(f"[⚠️] Erreur extraction critères de candidature : {e}")
+        return []
 if __name__ == "__main__":
     options = Options()
     # options.add_argument("--headless=new")
@@ -202,22 +300,46 @@ if __name__ == "__main__":
     driver.get("https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9197&typeBac=0&originePc=0")
     time.sleep(2)
 
-    intervalles = extract_all_intervalles(driver)
-    print("\n📊 Intervalles par Bac :")
-    for section, data in intervalles.items():
-        print(f"\n🔹 {section}")
-        for bac, val in data.items():
-            print(f"  {bac}: {val}")
+    criteres = extract_criteres_candidature(driver)
 
-    print("\n📚 Doublettes de spécialités les plus favorables à la sélection :")
-    doublettes_par_bac = extract_all_doublettes_par_bac(driver)
+    print("\n🧾 Critères d’analyse de candidature :")
+    grouped = {}
 
-    for bac_label, result in doublettes_par_bac.items():
-        print(f"\n🔸 {bac_label}")
-        if result:
-            for key, val in result.items():
-                print(f"{key} {val}")
-        else:
-            print("⚠️ Aucune doublette trouvée.")
+    # 🔄 Regrouper les sous-critères par critère principal
+    for crit in criteres:
+        nom = crit["nom_critere"]
+        poids = crit["poids"]
+        niveau = crit["niveau"]
+        titre = crit["titre"]
+
+        if nom not in grouped:
+            grouped[nom] = {
+                "poids": poids,
+                "sous_criteres": {
+                    "essentiels": [],
+                    "tres_importants": [],
+                    "importants": [],
+                    "complementaires": []
+                }
+            }
+
+        niveau_key = (
+            "essentiels" if "essentiel" in niveau
+            else "tres_importants" if "très important" in niveau or "tres important" in niveau
+            else "importants" if "important" in niveau
+            else "complementaires" if "complémentaire" in niveau
+            else "autres"
+        )
+
+        grouped[nom]["sous_criteres"].setdefault(niveau_key, []).append(titre)
+
+    # 🔍 Affichage formaté
+    for nom, data in grouped.items():
+        print(f"\n🔹 {nom} ({data['poids']}%)")
+        for niveau, items in data["sous_criteres"].items():
+            if items:
+                print(f"  📌 {niveau.replace('_', ' ').capitalize()} :")
+                for s in items:
+                    print(f"    - {s}")
 
     driver.quit()

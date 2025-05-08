@@ -38,7 +38,40 @@
       "Pour Tle Générale": {},
       "Pour Tle Techno": {},
       "Pour Tle Pro": {}
-    }
+    },
+    "taux_passage_2e_annee": 47.5,
+    "criteres_candidature": [
+      {
+        "nom_critere": "Résultats scolaires",
+        "poids": 30.0,
+        "niveau": "essentiel",
+        "titre": "Niveau en Allemand, résultats Histoire-géo, Français (épreuves Bac ou au CERCL). Culture générale."
+      },
+      {
+        "nom_critere": "Méthodes de travail",
+        "poids": 30.0,
+        "niveau": "essentiel",
+        "titre": "Niveau Allemand et Français (B2 au C2). Organisation, autonomie et capacité de travail important."
+      },
+      {
+        "nom_critere": "Savoir-être",
+        "poids": 15.0,
+        "niveau": "très important",
+        "titre": "Autonomie, implication, concentration, organisation. Esprit d’équipe, curiosité intellectuelle."
+      },
+      {
+        "nom_critere": "Motivation",
+        "poids": 15.0,
+        "niveau": "très important",
+        "titre": "Résultats obtenus, pertinence projet de formation, fiche avenir, expériences personnelles /pro."
+      },
+      {
+        "nom_critere": "Engagement et activités",
+        "poids": 10.0,
+        "niveau": "important",
+        "titre": "Engagement associatif,sportif,culturel, civique. Échange /séjours linguistiques."
+      }
+    ]
   },
   {
     "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23589&typeBac=0&originePc=0",
@@ -84,7 +117,34 @@
       },
       "Pour Tle Techno": {},
       "Pour Tle Pro": {}
-    }
+    },
+    "taux_passage_2e_annee": 45.4,
+    "criteres_candidature": [
+      {
+        "nom_critere": "Résultats scolaires",
+        "poids": 80.0,
+        "niveau": "essentiel",
+        "titre": "Intérêt pour les questions juridiques, politiques et sociales, expression écrite et orale"
+      },
+      {
+        "nom_critere": "Résultats scolaires",
+        "poids": 80.0,
+        "niveau": "essentiel",
+        "titre": "Intérêt pour les questions juridiques, politiques et sociales, expression écrite et orale"
+      },
+      {
+        "nom_critere": "Résultats scolaires",
+        "poids": 80.0,
+        "niveau": "essentiel",
+        "titre": "Intérêt pour les questions juridiques, politiques et sociales, expression écrite et orale"
+      },
+      {
+        "nom_critere": "Motivation",
+        "poids": 20.0,
+        "niveau": "essentiel",
+        "titre": "Projet de formation"
+      }
+    ]
   },
   {
     "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9197&typeBac=0&originePc=0",
@@ -139,7 +199,64 @@
         "3)": "Photographie",
         "autres": "Et d'autres élèves ont aussi été admis avec d'autres doublettes."
       }
-    }
+    },
+    "taux_passage_2e_annee": 49.0,
+    "criteres_candidature": [
+      {
+        "nom_critere": "Résultats scolaires",
+        "poids": 30.0,
+        "niveau": "essentiel",
+        "titre": "Notes de Français."
+      },
+      {
+        "nom_critere": "Résultats scolaires",
+        "poids": 30.0,
+        "niveau": "très important",
+        "titre": "Notes de philosophie et d'histoire- géographie."
+      },
+      {
+        "nom_critere": "Résultats scolaires",
+        "poids": 30.0,
+        "niveau": "complémentaire",
+        "titre": "Le cas échéant : notes d'arts plastiques, d'histoire de l'art, de cinéma et de théâtre"
+      },
+      {
+        "nom_critere": "Méthodes de travail",
+        "poids": 30.0,
+        "niveau": "essentiel",
+        "titre": "Qualité rédactionnelle."
+      },
+      {
+        "nom_critere": "Méthodes de travail",
+        "poids": 30.0,
+        "niveau": "important",
+        "titre": "Connaissances et capacités artistiques."
+      },
+      {
+        "nom_critere": "Savoir-être",
+        "poids": 5.0,
+        "niveau": "important",
+        "titre": "Appréciations des enseignants."
+      },
+      {
+        "nom_critere": "Motivation",
+        "poids": 30.0,
+        "niveau": "essentiel",
+        "titre": "Motivation."
+      },
+      {
+        "nom_critere": "Motivation",
+        "poids": 30.0,
+        "niveau": "très important",
+        "titre": "Connaissance de la formation et cohérence du projet."
+      },
+      {
+        "nom_critere": "Engagement et activités",
+        "poids": 5.0,
+        "niveau": "important",
+        "titre": "Centres d'intérêts artistiques."
+      }
+    ]
   },
   {
     "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6357&typeBac=0&originePc=0",
@@ -179,7 +296,40 @@
       "Pour Tle Générale": {},
       "Pour Tle Techno": {},
       "Pour Tle Pro": {}
-    }
+    },
+    "taux_passage_2e_annee": 47.5,
+    "criteres_candidature": [
+      {
+        "nom_critere": "Résultats scolaires",
+        "poids": 80.0,
+        "niveau": "très important",
+        "titre": "Résultats du candidat au lycée, au baccalauréat ou dans l’enseignement supérieur"
+      },
+      {
+        "nom_critere": "Méthodes de travail",
+        "poids": 5.0,
+        "niveau": "complémentaire",
+        "titre": "Compétences académiques, acquis méthodologiques, savoir-faire"
+      },
+      {
+        "nom_critere": "Savoir-être",
+        "poids": 5.0,
+        "niveau": "complémentaire",
+        "titre": "Autonomie, implication et savoir-être dans le cadre scolaire, péri-scolaire ou universitaire"
+      },
+      {
+        "nom_critere": "Motivation",
+        "poids": 5.0,
+        "niveau": "complémentaire",
+        "titre": "Motivation exprimée par le candidat pour suivre la formation, connaissance ou cohérence du projet personnel et académique"
+      },
+      {
+        "nom_critere": "Engagement et activités",
+        "poids": 5.0,
+        "niveau": "complémentaire",
+        "titre": "Engagement citoyen, activités sportives ou artistiques, centres d'intérêt du candidat, certifications non scolaires"
+      }
+    ]
   },
   {
     "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=14653&typeBac=0&originePc=0",
@@ -220,7 +370,40 @@
       "Pour Tle Générale": {},
       "Pour Tle Techno": {},
       "Pour Tle Pro": {}
-    }
+    },
+    "taux_passage_2e_annee": 83.6,
+    "criteres_candidature": [
+      {
+        "nom_critere": "Résultats scolaires",
+        "poids": 50.0,
+        "niveau": "très important",
+        "titre": "Résultats dans certaines matières"
+      },
+      {
+        "nom_critere": "Méthodes de travail",
+        "poids": 20.0,
+        "niveau": "très important",
+        "titre": "Compétences d'organisation et d'autonomie. Capacités d'analyse et d'argumentation"
+      },
+      {
+        "nom_critere": "Savoir-être",
+        "poids": 10.0,
+        "niveau": "essentiel",
+        "titre": "Rigueur. Travail en équipe. Se montrer engagé et volontaire face à la formation. Esprit d'initiative."
+      },
+      {
+        "nom_critere": "Motivation",
+        "poids": 15.0,
+        "niveau": "très important",
+        "titre": "Présence aux JPOs et/ou forums. Projet motivé."
+      },
+      {
+        "nom_critere": "Engagement et activités",
+        "poids": 5.0,
+        "niveau": "complémentaire",
+        "titre": "Capacité à se mobiliser hors cours."
+      }
+    ]
   },
   {
     "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2741&typeBac=0&originePc=0",
@@ -260,6 +443,95 @@
       "Pour Tle Générale": {},
       "Pour Tle Techno": {},
       "Pour Tle Pro": {}
+    },
+    "taux_passage_2e_annee": 40.9,
+    "criteres_candidature": {
+      "Résultats scolaires": {
+        "poids": 60.0,
+        "sous_criteres": {
+          "essentiels": [
+            {
+              "titre": "Les notes du baccalauréat, de première et de terminale, Les résultats des épreuves anticipées du baccalauréat",
+              "description": "Toutes les notes des bulletins de première et de terminale, les résultats des épreuves anticipées du baccalauréat ou des notes du bac."
+            },
+            {
+              "titre": "Notes post bac",
+              "description": "Résultats obtenus dans l’enseignement supérieur"
+            },
+            {
+              "titre": "Notes des diplômes équivalents au baccalauréat",
+              "description": "Notes des diplômes équivalents au baccalauréat"
+            },
+            {
+              "titre": "Les notes en anglais et en italien",
+              "description": "Résultats en première et en terminale en anglais et en italien"
+            }
+          ],
+          "tres_importants": [],
+          "importants": [],
+          "complementaires": []
+        }
+      },
+      "Méthodes de travail": {
+        "poids": 10.0,
+        "sous_criteres": {
+          "essentiels": [
+            {
+              "titre": "L’avis du conseil de classe et du chef d’établissement mentionné sur la fiche Avenir",
+              "description": "Champ « Méthode de travail » de la fiche Avenir"
+            }
+          ],
+          "tres_importants": [],
+          "importants": [],
+          "complementaires": []
+        }
+      },
+      "Savoir-être": {
+        "poids": 5.0,
+        "sous_criteres": {
+          "essentiels": [
+            {
+              "titre": "L’avis du conseil de classe et du chef d’établissement mentionné sur la fiche Avenir",
+              "description": "Champ « Autonomie » et « Capacité à s’investir » de la fiche Avenir"
+            }
+          ],
+          "tres_importants": [],
+          "importants": [],
+          "complementaires": []
+        }
+      },
+      "Motivation": {
+        "poids": 20.0,
+        "sous_criteres": {
+          "essentiels": [
+            {
+              "titre": "L’avis du conseil de classe et du chef d’établissement mentionné sur la fiche Avenir",
+              "description": "Champ « Capacité à réussir » de la fiche Avenir"
+            },
+            {
+              "titre": "Cohérence du projet de la fiche de suivi",
+              "description": "La fiche de suivi"
+            }
+          ],
+          "tres_importants": [],
+          "importants": [],
+          "complementaires": []
+        }
+      },
+      "Engagement et activités": {
+        "poids": 5.0,
+        "sous_criteres": {
+          "essentiels": [],
+          "tres_importants": [],
+          "importants": [
+            {
+              "titre": "Activités et centre d’intérêt",
+              "description": "Engagement citoyen et centres d’intérêt"
+            }
+          ],
+          "complementaires": []
+        }
+      }
     }
   }
 ]
