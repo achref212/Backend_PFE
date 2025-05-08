@@ -1,0 +1,265 @@
+[
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=22937&typeBac=0&originePc=0",
+    "titre": "Université Paris 1 Panthéon Sorbonne / Université Sorbonne Nouvelle Paris 3 (Paris 5e Arrondissement - 75)",
+    "badges": [
+      "Établissement public",
+      "Formation sélective",
+      "Formation ouvrant droit aux bourses",
+      "20 places en 2025",
+      "95 vœux confirmés en 2025",
+      "Diplôme national de licence contrôlé par l'Etat"
+    ],
+    "formation_selective": true,
+    "ts_taux_par_bac": {
+      "TS Tle système français G": "71",
+      "TS Tle système français T": "0",
+      "TS Tle système français P": "0",
+      "TS autres élèves": "30.43"
+    },
+    "intervalles_admis": {
+      "Intervalle des 10% admis les + bas": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 80% admis": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 10% admis les + hauts": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      }
+    },
+    "doublettes": {
+      "Pour Tle Générale": {},
+      "Pour Tle Techno": {},
+      "Pour Tle Pro": {}
+    }
+  },
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23589&typeBac=0&originePc=0",
+    "titre": "Université Paris 1 Panthéon Sorbonne (Paris 5e Arrondissement - 75)",
+    "badges": [
+      "Établissement public",
+      "Formation sélective",
+      "Formation ouvrant droit aux bourses",
+      "60 places en 2025",
+      "6655 vœux confirmés en 2025",
+      "Diplôme national de licence contrôlé par l'Etat"
+    ],
+    "formation_selective": true,
+    "ts_taux_par_bac": {
+      "TS Tle système français G": "5",
+      "TS Tle système français T": "0",
+      "TS Tle système français P": "0",
+      "TS autres élèves": "2.15"
+    },
+    "intervalles_admis": {
+      "Intervalle des 10% admis les + bas": {
+        "Pour Tle Générale": "16 - 17",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 80% admis": {
+        "Pour Tle Générale": "17 - 19",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 10% admis les + hauts": {
+        "Pour Tle Générale": "19.0 - 20",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      }
+    },
+    "doublettes": {
+      "Pour Tle Générale": {
+        "1)": "SES & HGGSP",
+        "2)": "Mathématiques & HGGSP",
+        "3)": "HGGSP & HLP",
+        "autres": "Et d'autres élèves ont aussi été admis avec d'autres doublettes."
+      },
+      "Pour Tle Techno": {},
+      "Pour Tle Pro": {}
+    }
+  },
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9197&typeBac=0&originePc=0",
+    "titre": "Université Paris 1 Panthéon Sorbonne (Paris 5e Arrondissement - 75)",
+    "badges": [
+      "Établissement public",
+      "Formation ouvrant droit aux bourses",
+      "375 places en 2025",
+      "4687 vœux confirmés en 2025",
+      "Diplôme national de licence contrôlé par l'Etat"
+    ],
+    "formation_selective": false,
+    "ts_taux_par_bac": {
+      "TS Tle système français G": "58",
+      "TS Tle système français T": "37",
+      "TS Tle système français P": "6",
+      "TS autres élèves": "21.24"
+    },
+    "intervalles_admis": {
+      "Intervalle des 10% admis les + bas": {
+        "Pour Tle Générale": "10 - 13",
+        "Pour Tle Techno": "10 - 13",
+        "Pour Tle Pro": "10 - 13"
+      },
+      "Intervalle des 80% admis": {
+        "Pour Tle Générale": "13 - 16,99",
+        "Pour Tle Techno": "13 - 16,99",
+        "Pour Tle Pro": "13 - 16,99"
+      },
+      "Intervalle des 10% admis les + hauts": {
+        "Pour Tle Générale": "17 - 20",
+        "Pour Tle Techno": "17 - 18",
+        "Pour Tle Pro": "17 - 18"
+      }
+    },
+    "doublettes": {
+      "Pour Tle Générale": {
+        "1)": "Arts Plastiques & LLCER",
+        "2)": "Arts Plastiques & HLP",
+        "3)": "HLP & LLCER",
+        "autres": "Et d'autres élèves ont aussi été admis avec d'autres doublettes."
+      },
+      "Pour Tle Techno": {
+        "1)": "Conception et création en design et métiers d'art & Analyse et méthodes en design",
+        "2)": "Mercatique & Droit et Economie",
+        "3)": "Physique-Chimie et Mathématiques & 2I2D",
+        "autres": "Et d'autres élèves ont aussi été admis avec d'autres doublettes."
+      },
+      "Pour Tle Pro": {
+        "1)": "Artisanat et métiers d'art - option communication visuelle pluri média",
+        "2)": "Métiers de la mode option vêtement",
+        "3)": "Photographie",
+        "autres": "Et d'autres élèves ont aussi été admis avec d'autres doublettes."
+      }
+    }
+  },
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6357&typeBac=0&originePc=0",
+    "titre": "Université de Lorraine - UFR Sciences Humaines et Sociales - Site de Nancy (54) (54)",
+    "badges": [
+      "Établissement public",
+      "Formation ouvrant droit aux bourses",
+      "235 places en 2025",
+      "1009 vœux confirmés en 2025",
+      "Diplôme national de licence contrôlé par l'Etat"
+    ],
+    "formation_selective": false,
+    "ts_taux_par_bac": {
+      "TS Tle système français G": "0",
+      "TS Tle système français T": "0",
+      "TS Tle système français P": "0",
+      "TS autres élèves": "100.0"
+    },
+    "intervalles_admis": {
+      "Intervalle des 10% admis les + bas": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 80% admis": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 10% admis les + hauts": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      }
+    },
+    "doublettes": {
+      "Pour Tle Générale": {},
+      "Pour Tle Techno": {},
+      "Pour Tle Pro": {}
+    }
+  },
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=14653&typeBac=0&originePc=0",
+    "titre": "LEGTPA Brioude-Bonnefont - Site de Fontannes (43)",
+    "badges": [
+      "Établissement public",
+      "Formation sélective",
+      "Formation ouvrant droit aux bourses",
+      "20 places en 2025",
+      "115 vœux confirmés en 2025",
+      "BTS contrôlé par l'Etat"
+    ],
+    "formation_selective": true,
+    "ts_taux_par_bac": {
+      "TS Tle système français G": "92",
+      "TS Tle système français T": "95",
+      "TS Tle système français P": "98",
+      "TS autres élèves": "27.59"
+    },
+    "intervalles_admis": {
+      "Intervalle des 10% admis les + bas": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 80% admis": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 10% admis les + hauts": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      }
+    },
+    "doublettes": {
+      "Pour Tle Générale": {},
+      "Pour Tle Techno": {},
+      "Pour Tle Pro": {}
+    }
+  },
+  {
+    "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2741&typeBac=0&originePc=0",
+    "titre": "Aix-Marseille Université - Site d'Aix-en-Provence (13)",
+    "badges": [
+      "Établissement public",
+      "Formation ouvrant droit aux bourses",
+      "105 places en 2025",
+      "440 vœux confirmés en 2025",
+      "Diplôme national de licence contrôlé par l'Etat"
+    ],
+    "formation_selective": false,
+    "ts_taux_par_bac": {
+      "TS Tle système français G": "0",
+      "TS Tle système français T": "0",
+      "TS Tle système français P": "0",
+      "TS autres élèves": "99.77"
+    },
+    "intervalles_admis": {
+      "Intervalle des 10% admis les + bas": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 80% admis": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      },
+      "Intervalle des 10% admis les + hauts": {
+        "Pour Tle Générale": "",
+        "Pour Tle Techno": "",
+        "Pour Tle Pro": ""
+      }
+    },
+    "doublettes": {
+      "Pour Tle Générale": {},
+      "Pour Tle Techno": {},
+      "Pour Tle Pro": {}
+    }
+  }
+]
